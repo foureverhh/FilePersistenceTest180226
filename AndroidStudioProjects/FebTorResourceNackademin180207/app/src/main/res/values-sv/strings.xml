@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FebTorResourceNackademin180207</string>
+    <string name="image">Sample</string>
+    <string name="hello_world">Hej världen!</string>
+    <string name="btn">Tryck</string>
+    <string name="goodbye_world">HEj då världen!</string>
+</resources>
