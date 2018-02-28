@@ -13,4 +13,15 @@
 
     </style>
 
+    //change the subtitle text color
+    <style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.Light">
+
+
+    </style>
+
+    <style name="PopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#9e9e9e</item>
+        <item name="android:background">#FF95BE8F</item>
+    </style>
+
 </resources>
