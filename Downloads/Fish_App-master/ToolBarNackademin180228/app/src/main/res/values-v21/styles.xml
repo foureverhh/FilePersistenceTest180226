@@ -7,9 +7,9 @@
     <!-- Base application theme. -->
     <style name="ParentMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHighlight">#1ef1ab</item>
+        <item name="android:colorButtonNormal">#f955f3</item>
+        <item name="android:colorControlActivated">#0cf427</item>
     </style>
 
 </resources>
