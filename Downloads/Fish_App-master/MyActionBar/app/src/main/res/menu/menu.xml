@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/help"
+        android:title="@string/help_name"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings_name"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/update"
+        android:title="@string/update_name"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/comment"
+        android:icon="@drawable/ic_comment_black_24dp"
+        app:showAsAction="always"
+        android:title="@string/comment_name"
+        >
+    </item>
+//Action view
+    <item
+        android:id="@+id/search"
+        android:title="@string/settings_name"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:actionViewClass="android.support.v7.widget.SearchView">
+
+    </item>
+
+//Action provider
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider">
+
+    </item>
+</menu>
