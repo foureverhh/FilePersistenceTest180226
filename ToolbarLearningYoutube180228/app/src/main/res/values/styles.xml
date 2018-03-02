@@ -10,5 +10,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="myCustomizedToolBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#fafaf8</item>
+        <item name="android:textColorSecondary">#ff003b</item>
+    </style>
+    <!--To edit the text color in the popupTheme-->
+    <style name="MyCustomizedMenuTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">#F00</item>
+        <item name="android:textColorSecondary">#00F</item>
     </style>
 </resources>

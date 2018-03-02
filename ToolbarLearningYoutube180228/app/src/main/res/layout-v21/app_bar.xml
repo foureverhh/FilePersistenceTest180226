@@ -5,9 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:minHeight="?attr/actionBarSize"
     android:background="@color/colorPrimary"
+    android:elevation="50dp"
     app:theme="@style/myCustomizedToolBarTheme"
     app:popupTheme="@style/MyCustomizedMenuTheme">
-
-
 
 </android.support.v7.widget.Toolbar>
