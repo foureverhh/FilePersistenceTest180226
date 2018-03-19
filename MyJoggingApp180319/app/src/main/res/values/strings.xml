@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyJoggingApp180319</string>
+    <string name="location">Location</string>
+    <string name="fetching_location">Fetching location</string>
+    <string name="fetching_latitude">Fetching latitude</string>
+    <string name="fetching_longitude">Fetching longitude</string>
+</resources>
