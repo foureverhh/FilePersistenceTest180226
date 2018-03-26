@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LocationPractiseYoutube180326</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="altitude">Altitude</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="speed">Speed</string>
+    <string name="sensor">Sensor</string>
+    <string name="updates">Updates</string>
+    <string name="turn_to_pgs">switch to GPS</string>
+    <string name="turn_to_balanced">switch to balanced mode</string>
+    <string name="turn_on_location_updates">Turn on location updates</string>
+    <string name="turn_off_location_updates">Turn off location updates</string>
+    <string name="tb">ToggleButton</string>
+    <string name="updates_default">Off</string>
+    <string name="sensor_default">Cell Tower and WiFi</string>
+</resources>
