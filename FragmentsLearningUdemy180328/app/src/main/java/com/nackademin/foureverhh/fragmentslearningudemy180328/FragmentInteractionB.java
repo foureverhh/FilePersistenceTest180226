@@ -10,19 +10,40 @@ import android.widget.TextView;
 
 public class FragmentInteractionB extends Fragment {
 
-    TextView textView;
+
+
+    String data;
+    TextView text;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_interaction_b,container,false);
+        //return inflater.inflate(R.layout.fragment_interaction_b,container,false);
+        View view = inflater.inflate(R.layout.fragment_interaction_b,container,false);
+        if(savedInstanceState == null){
+
+        }else{
+            data = savedInstanceState.getString("textView");
+            TextView myText = (TextView) view.findViewById(R.id.textView);
+            myText.setText(data);
+        }
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        textView = getActivity().findViewById(R.id.textView);
+        text = getActivity().findViewById(R.id.textView);
     }
     public void textChange(String newText){
-        textView.setText(newText);
+        this.data = newText;
+        text.setText(newText);
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        //Before onDestroy pass the text of textView to outState
+        outState.putString("textView",data);
     }
 }
