@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#bFF">
+
+    <Button
+        android:id="@+id/addA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/removeA"
+        android:layout_marginStart="16dp"
+        android:onClick="addA"
+        android:text="@string/add_a" />
+
+    <Button
+        android:id="@+id/removeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/removeB"
+        android:layout_alignTop="@+id/replaceAWithB"
+        android:onClick="removeA"
+        android:text="@string/remove_a" />
+
+    <Button
+        android:id="@+id/replaceAWithB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/replaceBWithA"
+        android:layout_marginTop="21dp"
+        android:onClick="replaceAWithB"
+        android:text="@string/replace_a_with_b" />
+
+    <Button
+        android:id="@+id/addB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addA"
+        android:layout_alignTop="@+id/removeB"
+        android:onClick="addB"
+        android:text="@string/add_b" />
+
+    <Button
+        android:id="@+id/removeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/replaceBWithA"
+        android:layout_marginStart="124dp"
+        android:onClick="removeB"
+        android:text="@string/remove_b" />
+
+    <Button
+        android:id="@+id/replaceBWithA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="89dp"
+        android:onClick="replaceBWithA"
+        android:text="@string/replace_b_with_a" />
+
+    <Button
+        android:id="@+id/attachA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="165dp"
+        android:onClick="attachA"
+        android:text="@string/attach_a" />
+
+    <Button
+        android:id="@+id/detachA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/replaceAWithB"
+        android:layout_alignTop="@+id/attachA"
+        android:onClick="detachA"
+        android:text="@string/detach_a" />
+
+    <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="68dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

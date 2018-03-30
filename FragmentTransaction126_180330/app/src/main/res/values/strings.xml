@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FragmentTransaction126_180330</string>
+    <string name="this_is_fragment_b">This is fragment B</string>
+    <string name="this_is_fragment_a">This is fragment A</string>
+    <string name="add_a">Add A</string>
+    <string name="remove_a">Remove A</string>
+    <string name="replace_a_with_b">Replace A with B</string>
+    <string name="add_b">Add B</string>
+    <string name="remove_b">Remove B</string>
+    <string name="replace_b_with_a">Replace B with A</string>
+    <string name="detach_a">Detach A</string>
+    <string name="attach_a">Attach A</string>
+</resources>
