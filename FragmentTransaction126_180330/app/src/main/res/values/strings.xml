@@ -10,4 +10,7 @@
     <string name="replace_b_with_a">Replace B with A</string>
     <string name="detach_a">Detach A</string>
     <string name="attach_a">Attach A</string>
+    <string name="back">Back</string>
+    <string name="pop_add_b">pop add b</string>
+    <string name="here_is_text">Here is text</string>
 </resources>
