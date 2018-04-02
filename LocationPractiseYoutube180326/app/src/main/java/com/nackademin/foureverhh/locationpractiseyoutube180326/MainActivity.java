@@ -1,6 +1,7 @@
 package com.nackademin.foureverhh.locationpractiseyoutube180326;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.support.v4.app.ActivityCompat;
@@ -10,7 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-import com.google.android.gms.common.api.GoogleApiClient;
+
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -93,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
             //Request permissions
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},MY_PERMISSION_REQUEST_FINE_LOCATION);
         }
-
+    }
+    public void showMap(View view){
+        Intent intent = new Intent (this,MapsActivity.class);
+        startActivity(intent);
     }
 }

@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/latitude"
-        android:textSize="18sp"/>
+        android:textSize="10sp"/>
 
     <TextView
         android:layout_marginTop="3dp"
@@ -21,20 +21,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/latitude"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_gravity="center"/>
 
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/tvLongitude"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/longitude" />
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/longitude"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -43,14 +43,14 @@
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/tvAltitude"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/altitude" />
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/altitude"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -59,14 +59,14 @@
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/tvAccuracy"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/accuracy" />
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/accuracy"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -75,14 +75,14 @@
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/tvSpeed"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/speed" />
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/speed"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -91,14 +91,14 @@
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/tvSensor"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sensor" />
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/sensor"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -107,14 +107,14 @@
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/tvUpdates"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/updates" />
     <TextView
         android:layout_marginTop="3dp"
         android:id="@+id/updates"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -139,6 +139,14 @@
         android:text="@string/tb"
         android:textOff="@string/turn_on_location_updates"
         android:textOn="@string/turn_off_location_updates" />
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/btn_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showMap"
+        android:text="Check the position on map"
+        android:layout_gravity="center"/>
 
 
 </LinearLayout>
