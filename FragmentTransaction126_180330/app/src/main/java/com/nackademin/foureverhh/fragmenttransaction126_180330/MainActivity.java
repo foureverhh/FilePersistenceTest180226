@@ -115,11 +115,12 @@ public class MainActivity extends AppCompatActivity implements FragmentManager.O
     }
 
     public void back(View view){
-
+        fragmentManager.popBackStack();
     }
 
     public void popAddB(View view){
-
+        fragmentManager.popBackStack("addB",0);
+        //fragmentManager.popBackStack("addB",fragmentManager.POP_BACK_STACK_INCLUSIVE);
     }
 
     @Override
