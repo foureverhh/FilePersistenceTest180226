@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ListFragment131_180403</string>
+    <string-array name="heroes">
+        <item>Batman</item>
+        <item>Superman</item>
+        <item>Green Lantern</item>
+        <item>Arrow</item>
+    </string-array>
+</resources>
