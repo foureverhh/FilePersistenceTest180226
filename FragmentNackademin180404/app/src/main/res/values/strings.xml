@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FragmentNackademin180404</string>
+    <string name="my_fragment">My Fragment</string>
+    <string name="my_second_fragment">My second fragment</string>
+</resources>
