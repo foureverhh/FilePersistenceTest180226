@@ -8,10 +8,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 public class MyFragment extends Fragment {
-    static  final  String TAG = "Now we are on";
 
+    static  final  String TAG = "First fragment is on";
+    TextView textView;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -29,10 +31,16 @@ public class MyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.my_fragment,container,false);
+        textView = view.findViewById(R.id.textViewA);
+        //textView.setText("Text view in MyFragment");
 
 
         Log.d(TAG,"onCreateView()");
         return view;
+    }
+
+    public void setTextInTextView(String str){
+        textView.setText(str);
     }
 
     @Override

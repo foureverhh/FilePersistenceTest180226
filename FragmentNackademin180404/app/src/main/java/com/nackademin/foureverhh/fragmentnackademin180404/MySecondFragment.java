@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 public class MySecondFragment extends Fragment {
 
-    static  final  String TAG = "Now we are on";
+    static  final  String TAG = "Second fragment are on";
 
     @Override
     public void onAttach(Context context) {
