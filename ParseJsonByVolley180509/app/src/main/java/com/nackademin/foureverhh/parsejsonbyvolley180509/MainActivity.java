@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mTextViewResult;
     private RequestQueue mQueue;
-    Button parse,toSetup;
+    Button parse,toSetup,toSingleton;
 
 
     @Override
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mTextViewResult = findViewById(R.id.text_view_result);
         parse = findViewById(R.id.btn_parse);
         toSetup = findViewById(R.id.btn_toSetup);
+        toSingleton = findViewById(R.id.btn_toSingleton);
 
         mQueue = Volley.newRequestQueue(this);
         parse.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toSetup = new Intent (MainActivity.this, SetUpARequestQueue.class);
                 startActivity(toSetup);
+            }
+        });
+
+        toSingleton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toSingleton = new Intent (MainActivity.this, SingletonPattern.class);
+                startActivity(toSingleton);
             }
         });
     }

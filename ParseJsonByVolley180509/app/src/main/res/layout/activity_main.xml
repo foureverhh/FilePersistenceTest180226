@@ -39,5 +39,13 @@
         android:text="to set up"
         android:textSize="12sp"/>
 
+    <Button
+        android:id="@+id/btn_toSingleton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="to singleton"
+        android:textSize="12sp"/>
+
 
 </LinearLayout>
