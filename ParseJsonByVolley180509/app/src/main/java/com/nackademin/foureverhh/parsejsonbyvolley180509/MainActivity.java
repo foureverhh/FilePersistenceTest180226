@@ -1,5 +1,6 @@
 package com.nackademin.foureverhh.parsejsonbyvolley180509;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mTextViewResult;
     private RequestQueue mQueue;
+    Button parse,toSetup;
 
 
     @Override
@@ -29,13 +31,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mTextViewResult = findViewById(R.id.text_view_result);
-        Button parse = findViewById(R.id.btn_parse);
+        parse = findViewById(R.id.btn_parse);
+        toSetup = findViewById(R.id.btn_toSetup);
 
         mQueue = Volley.newRequestQueue(this);
         parse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 jsonParse();
+            }
+        });
+
+        toSetup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toSetup = new Intent (MainActivity.this, SetUpARequestQueue.class);
+                startActivity(toSetup);
             }
         });
     }

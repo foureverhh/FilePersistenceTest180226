@@ -31,5 +31,13 @@
         android:text="Parse"
         android:textSize="12sp"/>
 
+    <Button
+        android:id="@+id/btn_toSetup"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="to set up"
+        android:textSize="12sp"/>
+
 
 </LinearLayout>
