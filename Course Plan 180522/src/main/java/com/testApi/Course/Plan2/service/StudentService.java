@@ -6,6 +6,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,22 +18,37 @@ import java.util.Scanner;
 @Service
 public class StudentService {
 
+
     private List<Student> students = new ArrayList<>(Arrays.asList(
-            new Student("s1","student 1","student1@gmail.com"),
-            new Student("s2","student 2","student2@gmail.com"),
-            new Student("s3","student 3","student3@gmail.com"),
-            new Student("s4","student 4","student4@gmail.com")
+            new Student("s1","student1","student1@gmail.com"),
+            new Student("s2","student2","student2@gmail.com"),
+           new Student("s3","student3","student3@gmail.com"),
+            new Student("s4","student4","student4@gmail.com"),
+            new Student("s6","student6","student6@gmail.com")
     ));
 
+
    public  StudentService ( ){
-       Scanner fileScanner = new Scanner("Students.txt");
+       //Read java string from txt file
+       try {
+         Scanner  fileScanner = new Scanner(new File("Students.txt"));
+          // while(fileScanner.hasNext()){
+               String origin = fileScanner.nextLine();
+               System.out.println("Origin String is "+origin);
+
+           //}
+
+       } catch (FileNotFoundException e) {
+           e.printStackTrace();
+       }
+
 
    }
 
 
 
     public List<Student> getStudents(){
-        saveStudents(students);
+        saveAllStudents();
         return students;
     }
 
@@ -84,7 +101,9 @@ public class StudentService {
            Student s = students.get(i);
            if(s.getId().equals(studentId))
                students.set(i,student);
+               saveOneStudentByUpdate(s);
        }
+
     }
 
     public void removeStudent(String studentId) {
@@ -136,14 +155,16 @@ public class StudentService {
         }
     }
 
-    public void saveStudents(List<Student>  students){
-        for(Student student: students) {
-            JSONObject jsonObject = new JSONObject();
-            jsonObject.put("id", student.getId());
-            jsonObject.put("name", student.getName());
-            jsonObject.put("email", student.getEmail());
-            try (FileWriter fileWriter = new FileWriter("Students.txt",true)) {
-                fileWriter.write(jsonObject.toJSONString());
+    public void saveAllStudents(){
+            try {
+                FileWriter fileWriter = new FileWriter("Students.txt");
+                JSONObject jsonObject  = new JSONObject();
+                for(Student student: students) {
+                    jsonObject.put("id", student.getId());
+                    jsonObject.put("name", student.getName());
+                    jsonObject.put("email", student.getEmail());
+                    fileWriter.write(jsonObject.toJSONString()+"\n");
+                }
                 fileWriter.close();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -151,4 +172,4 @@ public class StudentService {
         }
 
     }
-}
+
